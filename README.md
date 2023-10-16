@@ -9,7 +9,7 @@ Participantes deste projeto:
     <td align="center">
       <a href="#">
        <img src="ImagensGrupo/Christian.jpg" 
-       width="100px" alt="Foto de Christian"/><br>
+       heigh = "100px" width="100px" alt="Foto de Christian"/><br>
         <sub>
           <b>Christian Augustus Câncio Valini </b>
         </sub>
@@ -18,7 +18,7 @@ Participantes deste projeto:
     <td align="center">
       <a href="#">
         <img src="ImagensGrupo/Arthur.png"
-         width="100px;" alt="Foto do Arthur"/><br>
+         heigh = "100px" width="100px;" alt="Foto do Arthur"/><br>
         <sub>
           <b>Arthur Mello Pimentel</b>
         </sub>
@@ -27,7 +27,7 @@ Participantes deste projeto:
       <td align="center">
       <a href="#">
        <img src="ImagensGrupo/Augusto.jpg" 
-       width="100px" alt="Foto Augusto"/><br>
+       heigh= "100px "width="100px" alt="Foto Augusto"/><br>
         <sub>
           <b>Augusto Rodrigues Feltrin</b>
         </sub>
@@ -36,7 +36,7 @@ Participantes deste projeto:
       <td align="center">
       <a href="#">
          <img src="ImagensGrupo/Lucas.jpg"
-          width="100px" alt="Foto do Lucas"/><br>
+          heigh = "100px" width="100px" alt="Foto do Lucas"/><br>
         <sub>
           <b>Lucas Vizeu</b>
         </sub>
