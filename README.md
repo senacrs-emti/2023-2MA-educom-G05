@@ -44,3 +44,5 @@ Participantes deste projeto:
     </td>
   </tr>
 </table>
+
+ O Projeto se baseará nas áreas de Química, Biologia e Física, incluindo tópicos como Equações Químicas, Anatomia das Plantas e Leis de Newton. Realizaremos uma visita de campo à Universidade Estácio e documentaremos o progresso no Word para aprimorar o aprendizado e a compreensão nas Ciências da Natureza.
