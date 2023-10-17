@@ -38,7 +38,7 @@ Participantes deste projeto:
          <img src="Imagens/Grupo/Lucas.jpg"
           heigh = "100px" width="100px" alt="Foto do Lucas"/><br>
         <sub>
-          <b>Lucas Vizeu</b>
+          <b>Lucas Godoy Vizeu</b>
         </sub>
       </a>
     </td>
