@@ -1,11 +1,11 @@
 let engine = Matter.Engine.create()
 
 let rederer = Matter.Render.create({
-    element: document.body.main,
+    element: document.body,
     engine: engine,
     options: {
-        height: 800,
-        width: 700,
+        height: 600,
+        width: 800,
         wireframes: false
     }
 })
