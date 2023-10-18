@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>𝟑𝐃-𝐒𝐜𝐢𝐞𝐧𝐜𝐞 𝐋𝐚𝐛</h1>
+        </div>
+    </header>
+    
+    <nav>
+        <ul class="nav-list">
+            <li><a href="index.html">Menu</a></li>
+            <li><a href="#">Biologia</a></li>
+            <li><a href="#">Química</a></li>
+            <li><a href="#">Física</a></li>
+        </ul>
+        <div class="search-bar">
+            <button class="search-button">Buscar</button>
+            <input type="text" placeholder="Pesquisar...">
+        </div>
+    </nav>
+    
+    <main class="flex-container login-main">
+        <div class="form-container">
+            <h1>Entre na sua Conta </h1>
+            <form action="processar_login.php" method="POST">
+                <input type="text" id="username" name="username" required placeholder="Nome de usuário">
+                <input type="password" id="password" name="password" required placeholder="Senha">
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </main>
+    
+    <footer>
+        &copy; 2023 - Data
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
