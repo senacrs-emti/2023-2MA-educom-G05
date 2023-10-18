@@ -24,7 +24,7 @@ let composite = Matter.Composites.pyramid(500, 200, 10, 6, 0, 0, function(x, y){
     return Matter.Bodies.rectangle(x, y, 20, 20, {
         render: {
             sprite: {
-                texture: './assets/bird2.svg'
+                texture: '/Imagens/Grupo/Augusto.jpg'
             }
         }
     })
@@ -38,7 +38,7 @@ let ball_pos = {
 let ball = Matter.Bodies.circle(ball_pos.x, ball_pos.y, 20, {
     render: {
         sprite: {
-            texture: './assets/bird1.svg'
+            texture: '/Imagens/Grupo/Christian.jpg'
         }
     }
 })
@@ -73,7 +73,7 @@ Matter.Events.on(engine, 'afterUpdate', function(event){
        ball = Matter.Bodies.circle(ball_pos.x, ball_pos.y, 20, {
         render: {
             sprite: {
-                texture: './assets/bird1.svg'
+                texture: '/Imagens/Grupo/Christian.jpg'
             }
         }
        })
