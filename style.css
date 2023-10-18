@@ -140,3 +140,54 @@ footer {
     border-top: 5px solid var(--cor-primaria-clara);
     border-radius: 0 0 10px 10px;
 }
+
+
+/* Login */
+.login-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.login-main .form-container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.login-main label {
+    display: block;
+    margin-bottom: 2%;
+    text-align: left;
+    font-size: 1.5vw;
+}
+
+.login-main input[type="text"],
+.login-main input[type="password"] {
+    width: 100%;
+    padding: 2% 1%;
+    margin-bottom: 3%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.5vw;
+}
+
+.login-main button {
+    width: 40%; /* Reduzindo o tamanho do botão para 40% da largura */
+    padding: 2% 1%; /* Ajustando o tamanho do botão */
+    margin-bottom: 3%;
+    border: none;
+    cursor: pointer;
+    font-size: 2vw;
+    background-color: var(--cor-primaria-clara);
+    color: var(--cor-branca);
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.login-main .required {
+    font-size: 1.2vw;
+}
+
