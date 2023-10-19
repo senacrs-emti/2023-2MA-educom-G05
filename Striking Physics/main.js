@@ -1,12 +1,23 @@
-let engine = Matter.Engine.create()
+const gameTitle = document.createElement("h1");
+gameTitle.textContent = "𝐒𝐭𝐫𝐢𝐤𝐢𝐧𝐠 𝐏𝐡𝐲𝐬𝐢𝐜𝐬 🎳";
+
+gameTitle.style.fontSize = "2em";
+gameTitle.style.color = "white";
+gameTitle.style.textAlign = "center";
+gameTitle.style.position = "absolute";
+gameTitle.style.top = "20%"; 
+gameTitle.style.left = "50%";
+gameTitle.style.transform = "translate(-50%, -50%)";
+
+document.body.appendChild(gameTitle);let engine = Matter.Engine.create()
 
 let rederer = Matter.Render.create({
     element: document.body,
     engine: engine,
     options: {
-        height: 600,
-        width: 800,
-        wireframes: false
+        wireframes: false,
+        width: window.innerWidth,
+        height: window.innerHeight 
     }
 })
 
@@ -59,6 +70,29 @@ rederer.mouse = mouseConstraint
 Matter.World.add(engine.world, [ground, composite, ball, sling, mouseConstraint])
 
 let isFired = false
+
+Matter.Events.on(mouseConstraint, 'enddrag', function(event){
+    if(event.body === ball){
+        isFired = true
+    }
+})
+
+Matter.Events.on(engine, 'afterUpdate', function(event){
+    let dist_x = Math.abs(ball.position.x - ball_pos.x)
+    let dist_y = Math.abs(ball.position.y - ball_pos.y)
+    if(isFired && dist_x < 20 && dist_y < 20){
+       ball = Matter.Bodies.circle(ball_pos.x, ball_pos.y, 20, {
+        render: {
+            sprite: {
+                texture: './assets/bird1.svg'
+            }
+        }
+       })
+       sling.bodyB = ball
+       Matter.World.add(engine.world, ball)
+       isFired = false
+    }
+})
 
 Matter.Events.on(mouseConstraint, 'enddrag', function(event){
     if(event.body === ball){
