@@ -1,9 +1,10 @@
 /* Definindo as variáveis de cores */
+
 :root {
-    --cor-primaria-escura: #451952; 
-    --cor-primaria-clara: #662549;  
-    --cor-branca: #ffff;     
-    --cor-destaque: #FFFAD7;       
+    --cor-primaria-escura: #451952;
+    --cor-primaria-clara: #662549;
+    --cor-branca: #ffff;
+    --cor-destaque: #FFFAD7;
     --fonte-principal: 'Roboto', sans-serif;
 }
 
@@ -16,7 +17,7 @@ body {
     font-size: 16px;
     line-height: 1.6;
     background-color: var(--cor-destaque);
-    margin: 0; 
+    margin: 0;
 }
 
 header {
@@ -29,8 +30,8 @@ header {
 
 .header-content {
     display: flex;
-    align-items: center; 
-    justify-content: space-between; 
+    align-items: center;
+    justify-content: space-between;
 }
 
 header h1 {
@@ -38,36 +39,58 @@ header h1 {
     display: block;
 }
 
+header h1 a {
+    color: white;
+    text-decoration: none;
+}
+
 header img {
     height: 50px;
-    margin-left: 10px; 
+    margin-left: 10px;
+}
+
+header li {
+    list-style-type: none;
+}
+
+header li a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: 20px;
+    left: -48px;
 }
 
 nav {
     background-color: var(--cor-primaria-clara);
     color: var(--cor-branca);
-    display: flex; 
-    align-items: center; 
+    display: flex;
+    align-items: center;
     padding: 10px;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
 .nav-list {
-    list-style-type: none; 
+    list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex; 
+    display: flex;
 }
 
 .nav-list li {
-    margin-right: 20px; /* Espaçamento entre os itens do menu */
+    margin-right: 20px;
+    /* Espaçamento entre os itens do menu */
 }
 
 .nav-list a {
     text-decoration: none;
-    color: var(--cor-botao-nav); 
+    color: var(--cor-botao-nav);
     font-weight: bold;
     font-size: 18px;
+}
+
+.nav-list a:hover {
+    text-decoration: underline;
 }
 
 .search-bar {
@@ -95,41 +118,42 @@ nav input[type="text"] {
 }
 
 main {
-    display: flex; 
-    justify-content: space-between; 
+    display: flex;
+    justify-content: space-between;
     margin: 20px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .character-card {
-    flex-basis: calc(33.333% - 10px); /* Reduzindo o tamanho dos cartões */
+    flex-basis: calc(33.333% - 10px);
+    /* Reduzindo o tamanho dos cartões */
     background-color: var(--cor-primaria-escura);
     color: black;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
     text-align: center;
-    transition: transform 0.2s; 
-    box-sizing: border-box; 
+    transition: transform 0.2s;
+    box-sizing: border-box;
 }
 
 .character-link {
-    display: block; 
-    text-decoration: none; 
+    display: block;
+    text-decoration: none;
     color: var(--cor-branca);
 }
 
 .character-card img {
     max-width: 100%;
-    height: auto; 
-    margin: 0 auto; 
+    height: auto;
+    margin: 0 auto;
     margin-bottom: 10px;
 }
 
 .character-card:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 footer {
@@ -143,6 +167,7 @@ footer {
 
 
 /* Login */
+
 .login-main {
     display: flex;
     flex-direction: column;
@@ -175,8 +200,10 @@ footer {
 }
 
 .login-main button {
-    width: 40%; /* Reduzindo o tamanho do botão para 40% da largura */
-    padding: 2% 1%; /* Ajustando o tamanho do botão */
+    width: 40%;
+    /* Reduzindo o tamanho do botão para 40% da largura */
+    padding: 2% 1%;
+    /* Ajustando o tamanho do botão */
     margin-bottom: 3%;
     border: none;
     cursor: pointer;
@@ -190,4 +217,3 @@ footer {
 .login-main .required {
     font-size: 1.2vw;
 }
-
