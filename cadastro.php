@@ -1,9 +1,32 @@
-<?php
-include_once 'header.php';
-?>
-<link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+    <header>
+        <div class="header-content">
+            <h1><a href="index.html">𝟑𝐃-𝐒𝐜𝐢𝐞𝐧𝐜𝐞 𝐋𝐚𝐛</a></h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="nav-list">
+
+            <li><a href="bio.html">Biologia</a></li>
+            <li><a href="quim.html">Química</a></li>
+            <li><a href="fis.html">Física</a></li>
+        </ul>
+        <div class="search-bar">
+            <button class="search-button">Buscar</button>
+            <input type="text" placeholder="Pesquisar...">
+        </div>
+    </nav>
 <main>
     <div class="content">      
         <!--FORMULÁRIO DE LOGIN-->
@@ -38,7 +61,7 @@ include_once 'header.php';
    
         <!--FORMULÁRIO DE CADASTRO-->
         <div id="cadastro">
-          <form method="post" action=""> 
+          <form method="POST" action="testlogin.php"> 
             <h1>Cadastro</h1> 
              
             <p> 
@@ -57,7 +80,7 @@ include_once 'header.php';
             </p>
              
             <p> 
-              <input type="submit" value="Cadastrar"/> 
+              <input type="submit" name="submit"  value="Cadastrar"/> 
             </p>
              
             <p class="link">  
@@ -69,10 +92,9 @@ include_once 'header.php';
       </div>
     </div>  
 </main>
-<?php
-include_once 'footer.php';
-?>
-
+    <footer>
+        - &copy; 2023 - Data
+    </footer>
 
     <script src="script.js"></script>
 </body>

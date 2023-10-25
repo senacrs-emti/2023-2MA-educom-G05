@@ -2,23 +2,28 @@
 include_once 'header.php';
 ?>
 
-<link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
 <body>
 <main>
     <div class="content">      
         <!--FORMULÁRIO DE LOGIN-->
         <div id="login">
-          <form method="post" action=""> 
+          <form method="POST" action=""> 
             <h1>Login</h1> 
-            <p> 
+            <p>  
               <label for="nome_login">Seu nome</label>
-              <input id="nome_login" name="nome_login" required="required" type="text" placeholder="ex. contato@htmlecsspro.com"/>
+              <input id="nome_login" type = "text" name="nome" required="required" placeholder="ex. contato@htmlecsspro.com"/>
             </p>
              
             <p> 
               <label for="email_login">Seu e-mail</label>
-              <input id="email_login" name="email_login" required="required" type="password" placeholder="ex. senha" /> 
+              <input id="email_login" name="email" required="required" type="text" placeholder="ex. senha" /> 
             </p>
              
             <p> 
@@ -36,10 +41,7 @@ include_once 'header.php';
             </p>
           </form>
         </div>
-        <?php
-include_once 'footer.php';
-?>
-
+   
       
     <script src="script.js"></script>
 </body>
