@@ -38,7 +38,7 @@ function mudarEstagio() {
         document.getElementById("imagem").style.width = "7em"
         document.getElementById("imagem").style.height = "7em" 
     }
-    else if (contadorDia <= 13) {
+    else if (contadorDia == 13) {
         document.getElementById("imagem").src = "./img/Pumpkin_Stage_6.png";
         document.getElementById("imagem").style.width = "8em"
         document.getElementById("imagem").style.height = "8em" 
