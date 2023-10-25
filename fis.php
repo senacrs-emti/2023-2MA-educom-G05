@@ -21,8 +21,8 @@
     <nav>
         <ul class="nav-list">
 
-            <li><a href="#">Biologia</a></li>
-            <li><a href="#">Química</a></li>
+            <li><a href="bio.php">Biologia</a></li>
+            <li><a href="quim.php">Química</a></li>
             <li><a href="#">Física</a></li>
         </ul>
         <div class="search-bar">

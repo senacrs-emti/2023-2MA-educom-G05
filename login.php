@@ -1,5 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<?php
+include_once 'header.php';
+?>
 
 <head>
     <meta charset="UTF-8">
@@ -9,24 +10,6 @@
 </head>
 
 <body>
-    <header>
-        <div class="header-content">
-            <h1><a href="index.html">𝟑𝐃-𝐒𝐜𝐢𝐞𝐧𝐜𝐞 𝐋𝐚𝐛</a></h1>
-        </div>
-    </header>
-
-    <nav>
-        <ul class="nav-list">
-
-            <li><a href="bio.html">Biologia</a></li>
-            <li><a href="quim.html">Química</a></li>
-            <li><a href="fis.html">Física</a></li>
-        </ul>
-        <div class="search-bar">
-            <button class="search-button">Buscar</button>
-            <input type="text" placeholder="Pesquisar...">
-        </div>
-    </nav>
 <main>
     <div class="content">      
         <!--FORMULÁRIO DE LOGIN-->
@@ -54,7 +37,7 @@
              
             <p class="link">
               Ainda não tem conta?
-              <a href="cadastro.html">Cadastre-se</a>
+              <a href="cadastro.php">Cadastre-se</a>
             </p>
           </form>
         </div>
@@ -63,4 +46,3 @@
     <script src="script.js"></script>
 </body>
 
-</html>

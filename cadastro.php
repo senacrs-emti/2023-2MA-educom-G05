@@ -85,7 +85,7 @@
              
             <p class="link">  
               Já tem conta?
-              <a href="login.html"> Ir para Login </a>
+              <a href="login.php"> Ir para Login </a>
             </p>
           </form>
         </div>
