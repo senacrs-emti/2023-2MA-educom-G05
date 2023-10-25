@@ -1,3 +1,4 @@
+
 <header>
         <div class="header-content">
             <h1><a href="index.php">𝟑𝐃-𝐒𝐜𝐢𝐞𝐧𝐜𝐞 𝐋𝐚𝐛</a></h1>
@@ -6,7 +7,11 @@
 
     <nav>
         <ul class="nav-list">
-
+        <img src="Imagens/Projeto/user (1).png" alt="" width='40px'>
+            <li>
+                
+                <a href="login.php">Login</a>
+            </li>
             <li><a href="bio.php">Biologia</a></li>
             <li><a href="quim.php">Química</a></li>
             <li><a href="fis.php">Física</a></li>
