@@ -1,32 +1,13 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<?php
+include_once 'header.php';
+?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laboratório 3D Ciências Natureza</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+<link rel="stylesheet" href="style.css">
 
-<body>
-    <header>
-        <div class="header-content">
-            <h1><a href="index.html">𝟑𝐃-𝐒𝐜𝐢𝐞𝐧𝐜𝐞 𝐋𝐚𝐛</a></h1>
-        </div>
-    </header>
-    <nav>
-        <ul class="nav-list">
-            <img src="Imagens/Projeto/user (1).png" alt="" id="loginimagem">
-            <li><a href="cadastro.html">Cadastro</a></li>
-            <li><a href="bio.html">Biologia</a></li>
-            <li><a href="quim.html">Química</a></li>
-            <li><a href="fis.html">Física</a></li>
-        </ul>
-        <div class="search-bar">
-            <button class="search-button">Buscar</button>
-            <input type="text" placeholder="Pesquisar...">
-        </div>
-    </nav>
+
+ 
+
+</html>
 
     <main class="flex-container">
         <div class="character-card">
@@ -51,10 +32,9 @@
             </a>
         </div>
     </main>
-
-    <footer>
-        &copy; 2023 - Data
-    </footer>
+    <?php
+include_once 'footer.php';
+?>
 
     <script src="script.js"></script>
 </body>
