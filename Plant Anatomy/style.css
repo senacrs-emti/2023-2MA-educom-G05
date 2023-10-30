@@ -3,7 +3,7 @@ body{
     background-size: cover;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
-}
+} 
 
 h1{
     text-align: center;
@@ -42,9 +42,33 @@ h1{
     margin: auto;
     border-radius: 3em;
     box-shadow: 0px 0px 2em green;
+    position: relative;
+}
+
+#produtos{
+    position: relative;
+    float: left;
+    margin: 9em -25em 0em 15em;
+}
+#produtos div{
+    padding-bottom: 2em;
 }
 
 img{
     height: 5em;
     width: 5em;
+}
+
+#regador img{
+    transform: rotateY(180deg);
+    width: 6em;
+    height: 6em;
+}
+#detergente img{
+    width: 4em;
+    height: 6em;
+}
+#oleo img{
+    width: 4em;
+    height: 6em;
 }
