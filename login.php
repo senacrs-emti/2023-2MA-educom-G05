@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $server = 'localhost'; // Substitua pelos valores reais
     $username = 'root';
     $password = '';
-    $dbname = 'bd';
+    $dbname = 'cadastro';
 
     $conexao = mysqli_connect($server, $username, $password, $dbname); // MySQLi
 
@@ -54,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="content">      
             <!-- FORMULÁRIO DE LOGIN -->
             <div id="login">
-                <form method="POST" action=""> 
+                <form method="POST" action="_conexao.php"> 
                     <h1>Login</h1> 
                     <p>  
                         <label for="nome">Seu nome</label>
