@@ -1,33 +1,74 @@
-<?php
-include_once 'conexao.php';
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nome_cad = $_POST['nome_cad'];  // Nome do campo do formulário
-    $senha_cad = $_POST['senha_cad']; 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+    <header>
+        <div class="header-content">
+            <h1><a href="index.html">𝟑𝐃-𝐒𝐜𝐢𝐞𝐧𝐜𝐞 𝐋𝐚𝐛</a></h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="nav-list">
+
+            <li><a href="bio.html">Biologia</a></li>
+            <li><a href="quim.html">Química</a></li>
+            <li><a href="fis.html">Física</a></li>
+        </ul>
+        <div class="search-bar">
+            <button class="search-button">Buscar</button>
+            <input type="text" placeholder="Pesquisar...">
+        </div>
+    </nav>
+<main>
+   
+        <!--FORMULÁRIO DE CADASTRO-->
+        <div class="content">   
+        <div id="login">
+          <form method="POST" action="_conexao.php"> 
+            <h1>Cadastro</h1> 
+             
+            <p> 
+              <label for="nome">Seu nome</label>
+              <input id="nome" name="nome" required="required" type="text" placeholder="nome" />
+            </p>
+             
+            <p> 
+              <label for="email">Seu e-mail</label>
+              <input id="email" name="email" required="required" type="email" placeholder="contato@htmlecsspro.com"/> 
+            </p>
+             
+            <p> 
+              <label for="senha">Sua senha</label>
+              <input id="senha" name="senha" required="required" type="password" placeholder="ex. 1234"/>
+            </p>
+             
+            <p> 
+              <input type="submit" name="submit"  value="Cadastrar"/> 
+            </p>
+             
+            <p class="link">  
+              Já tem conta?
+              <a href="login.php"> Ir para Login </a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>  
     
-    if (!$connect) {
-        die("Erro na conexão com o banco de dados: " . mysqli_connect_error());
-    }
+</main>
+    <footer>
+        - &copy; 2023 - Data
+    </footer>
 
-    $query_select = "SELECT nome_cad FROM usuarios WHERE nome_cad = '$nome_cad'";
-    $select = mysqli_query($connect, $query_select);
+    <script src="script.js"></script>
+</body>
 
-    if (mysqli_num_rows($select) > 0) {
-        echo "<script>alert('Esse nome de usuário já existe');window.location.href='cadastro.html';</script>";
-    } else {
-        // Use password_hash para criar um hash seguro da senha antes de armazená-la no banco de dados
-        $senha_hashed = password_hash($senha_cad, PASSWORD_BCRYPT);
-        $query = "INSERT INTO usuarios (nome_cad, senha_cad) VALUES ('$nome_cad', '$senha_hashed')";
-        $insert = mysqli_query($connect, $query);
-
-        if ($insert) {
-            echo "<script>alert('Usuário cadastrado com sucesso!');window.location.href='login.html';</script>";
-        } else {
-            echo "<script>alert('Não foi possível cadastrar esse usuário');window.location.href='cadastro.html';</script>";
-        }
-    }
-
-    mysqli_close($connect);
-}
-?>
+</html>
