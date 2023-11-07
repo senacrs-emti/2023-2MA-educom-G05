@@ -1,4 +1,6 @@
 let contadorDia = 0;
+let nivelPoluicao = 0;
+let atrasoTotal = 0;
 
 function passarDia() {
         contadorDia++;
@@ -13,34 +15,54 @@ function voltarDia() {
     }
 }
 
+function produtosPoluicao(id_produto) {
+    if (id_produto == "regador") {
+        if (nivelPoluicao > 0) {
+            nivelPoluicao -= 5;
+            document.getElementById("poluicaoPorcentagem").innerHTML = nivelPoluicao;
+        }
+    } else if (id_produto == "detergente") {
+        if (nivelPoluicao < 100) {
+            nivelPoluicao += 2;
+            document.getElementById("poluicaoPorcentagem").innerHTML = nivelPoluicao;
+        }
+    } else if (id_produto == "oleo"){
+        if (nivelPoluicao < 100) {
+            nivelPoluicao += 5;
+            document.getElementById("poluicaoPorcentagem").innerHTML = nivelPoluicao;
+        }
+    }
+    calcularPoluicao();
+}
+
+function calcularPoluicao() {
+    return atrasoTotal = (41 / 100) * nivelPoluicao;
+}
+
 function mudarEstagio() {
-    if (contadorDia <= 1) {
-        document.getElementById("imagem").src = "./img/Pumpkin_Stage_1.png";
-        document.getElementById("imagem").style.width = "5em"
-        document.getElementById("imagem").style.height = "5em" 
-    } else if (contadorDia <= 2) {
-        document.getElementById("imagem").src = "./img/Pumpkin_Stage_2.png";
-        document.getElementById("imagem").style.width = "6em"
-        document.getElementById("imagem").style.height = "6em" 
-    }
-    else if (contadorDia <= 4) {
-        document.getElementById("imagem").src = "./img/Pumpkin_Stage_3.png";
-        document.getElementById("imagem").style.width = "6em"
-        document.getElementById("imagem").style.height = "6em" 
-    }
-    else if (contadorDia <= 7) {
-        document.getElementById("imagem").src = "./img/Pumpkin_Stage_4.png";
-        document.getElementById("imagem").style.width = "7em"
-        document.getElementById("imagem").style.height = "7em" 
-    }
-    else if (contadorDia <= 11) {
-        document.getElementById("imagem").src = "./img/Pumpkin_Stage_5.png";
-        document.getElementById("imagem").style.width = "7em"
-        document.getElementById("imagem").style.height = "7em" 
-    }
-    else if (contadorDia == 13) {
-        document.getElementById("imagem").src = "./img/Pumpkin_Stage_6.png";
-        document.getElementById("imagem").style.width = "8em"
-        document.getElementById("imagem").style.height = "8em" 
+    if (contadorDia >= 13 + (13 * atrasoTotal)) {
+        document.getElementById("plantas").src = "./img/Pumpkin_Stage_6.png";
+        document.getElementById("plantas").style.width = "8em"
+        document.getElementById("plantas").style.height = "8em" 
+    } else if (contadorDia >= 11 + (11 * atrasoTotal)) {
+        document.getElementById("plantas").src = "./img/Pumpkin_Stage_5.png";
+        document.getElementById("plantas").style.width = "7em"
+        document.getElementById("plantas").style.height = "7em" 
+    } else if (contadorDia >= 7 + (7 * atrasoTotal)) {
+        document.getElementById("plantas").src = "./img/Pumpkin_Stage_4.png";
+        document.getElementById("plantas").style.width = "7em"
+        document.getElementById("plantas").style.height = "7em" 
+    } else if (contadorDia >= 4 + (4 * atrasoTotal)) {
+        document.getElementById("plantas").src = "./img/Pumpkin_Stage_3.png";
+        document.getElementById("plantas").style.width = "6em"
+        document.getElementById("plantas").style.height = "6em" 
+    } else if (contadorDia >= 2 + (2 * atrasoTotal)) {
+        document.getElementById("plantas").src = "./img/Pumpkin_Stage_2.png";
+        document.getElementById("plantas").style.width = "6em"
+        document.getElementById("plantas").style.height = "6em" 
+    } else if (contadorDia >= 0) {
+        document.getElementById("plantas").src = "./img/Pumpkin_Stage_1.png";
+        document.getElementById("plantas").style.width = "5em"
+        document.getElementById("plantas").style.height = "5em" 
     }
 }
