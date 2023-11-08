@@ -8,27 +8,28 @@
 </head>
 <body>
     <section id="produtos">
+        <h2>PRODUTOS</h2>
         <div>
             <button id="regador" onclick="produtosPoluicao(this.id)">
                 <img src="./img/regador.png" alt="Regador">
-                <p>ÁGUA</p>
             </button>
+            <p>ÁGUA</p>
         </div>
         <div>
             <button id="detergente" onclick="produtosPoluicao(this.id)">
                 <img src="./img/detergente.png" alt="Detergente">
-                <p>DETERGENTE</p>
             </button>
+            <p>DETERGENTE</p>
         </div>
         <div>
             <button id="oleo" onclick="produtosPoluicao(this.id)">
                 <img src="./img/oleo.png" alt="óleo">
-                <p>ÓLEO</p>
             </button>
+            <p>ÓLEO</p>
         </div>
     </section>
     <section>
-        <h1>ESTÁGIO 1</h1>
+        <h1>ESTÁGIO <span id="estagioN">1</span></h1>
         <div id="botaoDia">
             <button onclick="voltarDia()"><</button>
             <h3>  DIA <span id="dia">0</span>  </h3>

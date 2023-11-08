@@ -38,6 +38,7 @@ p{
     color: white;
     border: none;
     border-radius: 2em;
+    cursor: pointer;
 }
 
 #estagios{
@@ -55,11 +56,16 @@ p{
 #produtos{
     position: relative;
     float: left;
-    margin: 6em -25em 0em 15em;
+    margin: 5em -25em 0em 15em;
+    background-color: grey;
+    border: 1px black solid;
 }
 #produtos button{
     background: none;
     border: none;
+}
+#produtos div{
+    padding: 0.5em 1.5em 0.5em 1.5em;
 }
 
 img{
@@ -71,12 +77,15 @@ img{
     transform: rotateY(180deg);
     width: 6em;
     height: 6em;
+    cursor: pointer;
 }
 #detergente img{
     width: 4em;
     height: 6em;
+    cursor: pointer;
 }
 #oleo img{
     width: 4em;
     height: 6em;
+    cursor: pointer;
 }
