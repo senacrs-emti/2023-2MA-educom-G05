@@ -1,38 +1,13 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<?php
+include_once 'header.php';
+?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <header>
-        <div class="header-content">
-            <h1><a href="index.html">𝟑𝐃-𝐒𝐜𝐢𝐞𝐧𝐜𝐞 𝐋𝐚𝐛</a></h1>
-        </div>
-    </header>
-
-    <nav>
-        <ul class="nav-list">
-
-            <li><a href="bio.html">Biologia</a></li>
-            <li><a href="quim.html">Química</a></li>
-            <li><a href="fis.html">Física</a></li>
-        </ul>
-        <div class="search-bar">
-            <button class="search-button">Buscar</button>
-            <input type="text" placeholder="Pesquisar...">
-        </div>
-    </nav>
-<main>
+<link rel="stylesheet" href="style.css">
    
         <!--FORMULÁRIO DE CADASTRO-->
         <div class="content">   
         <div id="login">
-          <form method="POST" action="_conexao.php"> 
+          <form method="POST" action="processa_cadastro.php"> 
             <h1>Cadastro</h1> 
              
             <p> 
@@ -51,6 +26,7 @@
             </p>
              
             <p> 
+          
               <input type="submit" name="submit"  value="Cadastrar"/> 
             </p>
              
