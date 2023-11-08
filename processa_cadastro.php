@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $con = mysqli_connect('localhost', 'root', '', 'cad_usuario');
 
     // Inserir os dados no banco de dados
-    $query = "INSERT INTO usuarios (nome, email, senha) VALUES ('$nome', '$email', '$senha')";
+    $query = "INSERT INTO cad_usuario2 (nome, email, senha) VALUES ('$nome', '$email', '$senha')";
     if (mysqli_query($con, $query)) {
         echo "Cadastro realizado com sucesso!";
     } else {

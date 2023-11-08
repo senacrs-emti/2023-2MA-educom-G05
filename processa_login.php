@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $result = mysqli_query($con, $query);
 
     if ($row = mysqli_fetch_assoc($result)) {
-        if (password_verify($senha, $row['senha'])) {
+        if ( "SELECT * FROM cad_usuario2 WHERE email = '$email' and senha='$senha'") {
             echo "Login bem-sucedido!";
             // Você pode redirecionar o usuário para uma página interna aqui
         } else {
