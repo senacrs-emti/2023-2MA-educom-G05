@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT); // Criptografa a senha
 
     // Conectar ao banco de dados
-    $con = mysqli_connect('localhost', 'root', '', 'cad_usuario');
+    $con = mysqli_connect('localhost', 'root', '', 'cad_usuario2');
 
     // Inserir os dados no banco de dados
     $query = "INSERT INTO cad_usuario2 (nome, email, senha) VALUES ('$nome', '$email', '$senha')";
