@@ -1,6 +1,6 @@
 body{
     background-image: url(./img/background.jpg);
-    background-size: cover;
+    background-size: 100%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
 }
@@ -89,3 +89,17 @@ img{
     height: 6em;
     cursor: pointer;
 }
+#protein img{
+    width: 4em;
+    height: 6em;
+    cursor: pointer;
+}
+
+#outer {
+    overflow: hidden;
+    position: relative;
+  }
+  #inner {
+    position: absolute;
+    float: left;
+  }
