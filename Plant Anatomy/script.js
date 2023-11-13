@@ -4,7 +4,7 @@ let atrasoTotal = 0;
 let usaSuco = 0;
 
 function passarDia() {
-    if (contadorDia < 30) {
+    if (contadorDia < 32) {
         contadorDia++;
         document.getElementById("dia").innerHTML = contadorDia;
         mudarEstagio();   
@@ -22,17 +22,23 @@ function produtosPoluicao(id_produto) {
     if (id_produto == "regador") {
         if (nivelPoluicao > 0) {
             document.getElementById("regador").style.transformOrigin = "0 0";
-            nivelPoluicao -= 5;
+            if (nivelPoluicao - 5 < 0){
+                nivelPoluicao = 0;
+            } else{nivelPoluicao -= 5}
             document.getElementById("poluicaoPorcentagem").innerHTML = nivelPoluicao;
         }
     } else if (id_produto == "detergente") {
         if (nivelPoluicao < 100) {
-            nivelPoluicao += 2;
+            if (nivelPoluicao + 2 > 100){
+                nivelPoluicao = 100;
+            } else{nivelPoluicao += 2}
             document.getElementById("poluicaoPorcentagem").innerHTML = nivelPoluicao;
         }
     } else if (id_produto == "oleo"){
         if (nivelPoluicao < 100) {
-            nivelPoluicao += 5;
+            if (nivelPoluicao + 5 > 100){
+                nivelPoluicao = 100;
+            } else{nivelPoluicao += 5}
             document.getElementById("poluicaoPorcentagem").innerHTML = nivelPoluicao;
         }
     }
@@ -49,6 +55,7 @@ function puroSuco(){
     document.getElementById("pesadelo").style.display = "none";
     nivelPoluicao = 0;
     usaSuco = 1;
+    contadorDia = 0;
 }
 
 function mudarEstagio() {
@@ -57,6 +64,11 @@ function mudarEstagio() {
         document.getElementById("plantas").style.width = "12em"
         document.getElementById("plantas").style.height = "12em" 
         document.getElementById("estagioN").innerHTML = "FAKE NATTY!";
+    } else if (contadorDia == 32){
+        document.getElementById("plantas").src = "./img/Pumpkin_Rotten.png";
+        document.getElementById("plantas").style.width = "10em"
+        document.getElementById("plantas").style.height = "8em" 
+        document.getElementById("estagioN").innerHTML = "PODRE";
     } else if (contadorDia >= 13 + (13 * atrasoTotal)) {
         document.getElementById("plantas").src = "./img/Pumpkin_Stage_6.png";
         document.getElementById("plantas").style.width = "8em"
