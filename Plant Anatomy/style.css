@@ -56,7 +56,7 @@ p{
 #produtos{
     position: relative;
     float: left;
-    margin: 5em -25em 0em 15em;
+    margin: 6em -25em 0em 15em;
     background-color: grey;
     border: 1px black solid;
 }
@@ -95,11 +95,19 @@ img{
     cursor: pointer;
 }
 
-#outer {
-    overflow: hidden;
-    position: relative;
-  }
-  #inner {
-    position: absolute;
+#protein {
+    background: none;
+    border: none;
+}
+
+#inner {
+    display: block;
+    position: fixed;
     float: left;
-  }
+}
+
+@media only screen and (max-width: 80em) {
+    #inner {
+        display: none;
+    }
+}

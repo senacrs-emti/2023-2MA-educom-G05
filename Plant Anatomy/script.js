@@ -1,9 +1,10 @@
 let contadorDia = 0;
 let nivelPoluicao = 0;
 let atrasoTotal = 0;
+let usaSuco = 0;
 
 function passarDia() {
-    if (contadorDia < 20) {
+    if (contadorDia < 30) {
         contadorDia++;
         document.getElementById("dia").innerHTML = contadorDia;
         mudarEstagio();   
@@ -42,8 +43,20 @@ function calcularPoluicao() {
     return atrasoTotal = ((41 / 100) * nivelPoluicao)/100;
 }
 
+function puroSuco(){
+    document.getElementById("poluicaoPorcentagem").innerHTML = "MAROMBAAAAAAAA";
+    document.getElementById("produtos").style.display = "none";
+    nivelPoluicao = 0;
+    usaSuco = 1;
+}
+
 function mudarEstagio() {
-    if (contadorDia >= 13 + (13 * atrasoTotal)) {
+    if (usaSuco == 1 && contadorDia >= 20){
+        document.getElementById("plantas").src = "./img/Giant_Pumpkin.png";
+        document.getElementById("plantas").style.width = "12em"
+        document.getElementById("plantas").style.height = "12em" 
+        document.getElementById("estagioN").innerHTML = "FAKE NATTY!";
+    } else if (contadorDia >= 13 + (13 * atrasoTotal)) {
         document.getElementById("plantas").src = "./img/Pumpkin_Stage_6.png";
         document.getElementById("plantas").style.width = "8em"
         document.getElementById("plantas").style.height = "8em" 
