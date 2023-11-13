@@ -46,6 +46,7 @@ function calcularPoluicao() {
 function puroSuco(){
     document.getElementById("poluicaoPorcentagem").innerHTML = "MAROMBAAAAAAAA";
     document.getElementById("produtos").style.display = "none";
+    document.getElementById("pesadelo").style.display = "none";
     nivelPoluicao = 0;
     usaSuco = 1;
 }

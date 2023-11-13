@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PESADELO</title>
+</head>
+<body>
+    <img src="./img/olhoPesadelo.gif" alt="look" id="look">
+    <img src="./img/pesadelo2.png" alt="pesadelo" id="pesadelo">
+    <p>Os dias se passam <br> Ninguém mais está a salvo <br> 0,18% ainda está puro. <br> Não para sempre <br> O que você vai fazer <br> Nada não é?</p>
+
+    <style>
+        @font-face {
+            font-family: "GriffyRegular";
+            src: url(./font/Griffy-Regular.ttf);  
+        }
+        body{
+            background-color: black;
+            font-family: GriffyRegular;  
+            color: rgba(184, 183, 183, 0.701);
+        }
+        p{        
+            font-size: xx-large;
+            float: right;
+            margin: 5em 5em 5em 5em; 
+        }
+        #pesadelo{
+            width: 30em;
+            height: 35em;
+            margin: 1em 0em 0em 6em;
+            position: relative;
+        }
+        #look{
+            position: absolute;
+            width: 7em;
+            height: 7em;
+            padding: 7em 0em 0em 26em;
+            transform: rotate(20deg);
+        }
+        @media (max-width: 600px) {
+            #pesadelo{
+                margin: 0;
+            }
+            #look{
+                padding: 7em 0em 0em 20em;
+            }
+            p{
+                margin: 1em 1em 1em 1em; 
+                font-size: 2em;
+            }
+        }
+    </style>
+</body>
+</html>
