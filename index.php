@@ -22,9 +22,9 @@ include_once 'header.php';
             </a>
         </div>
         <div class="character-card">
-            <a href="#" class="character-link">
+            <a href="./Plant Anatomy/index.html" class="character-link">
                 <img src="Imagens/Projeto/PlantaLogo.jpg" alt="LogoPlanta">
-                <h3>Plant Anatomy</h3>
+                <h3>Plant Life</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio distinctio quia nemo! Blanditiis, sequi itaque tempore beatae molestiae sed iste veritatis nobis! Voluptas a hic facere minus possimus soluta numquam?</p>
             </a>
         </div>
