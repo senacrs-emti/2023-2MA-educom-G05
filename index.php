@@ -15,9 +15,9 @@ include_once 'header.php';
             </a>
         </div>
         <div class="character-card">
-            <a href="#" class="character-link">
+            <a href="jogolab/index.html" class="character-link">
                 <img src="Imagens/Projeto/AtomoLogo.jpg" alt="LogoAtomo">
-                <h3>Immersive Molecular World</h3>
+                <h3>Laboratório de CN</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio distinctio quia nemo! Blanditiis, sequi itaque tempore beatae molestiae sed iste veritatis nobis! Voluptas a hic facere minus possimus soluta numquam?</p>
             </a>
         </div>
