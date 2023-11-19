@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
          
             // Você pode redirecionar o usuário para uma página interna aqui
-            header("Location: index.php?mensagem=Login%20efetuado%20com%20sucesso");
+            header("Location: cadastrado.php?mensagem=Login%20efetuado%20com%20sucesso");
         } else {
             echo "Senha incorreta!";
         }
