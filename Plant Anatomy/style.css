@@ -53,6 +53,13 @@ p{
     box-shadow: 0px 0px 2em green;
 }
 
+#legenda{
+    position: relative;
+    float: right;
+    margin: -18em 5em 0em 0em;
+    font-size: x-large;
+}
+
 #produtos{
     position: relative;
     float: left;
@@ -134,4 +141,17 @@ img{
     #aviso {
         margin: 3em 11.5em 0em 11.5em;
     }
+}
+
+@keyframes regagemAgua {
+    0% {position: relative; transform: rotate(0deg); left: 20em}
+    100% {position: relative; transform: rotate(25deg); left: 20em}
+}
+@keyframes regagemDetergente {
+    0% {position: relative; transform: rotate(0deg); left: 21em; bottom: 9em;}
+    100% {position: relative; transform: rotate(70deg); left: 21em; bottom: 9em;}
+}
+@keyframes regagemOleo {
+    0% {position: relative; transform: rotate(0deg); left: 21em; bottom: 18em;}
+    100% {position: relative; transform: rotate(70deg); left: 21em; bottom: 18em;}
 }

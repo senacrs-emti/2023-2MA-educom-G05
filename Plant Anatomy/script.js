@@ -18,10 +18,22 @@ function voltarDia() {
     }
 }
 
+function produtosAnimation(id_produto) {
+    if (id_produto == "regador"){
+        document.getElementById("regador").style.animation = "2s regagemAgua";
+    } else if (id_produto == "detergente"){
+        document.getElementById("detergente").style.animation = "2s regagemDetergente";
+    } else if (id_produto == "oleo"){
+        document.getElementById("oleo").style.animation = "2s regagemOleo";
+    }
+    setTimeout(() => {document.getElementById(id_produto).style.removeProperty('animation');}, 2000);
+}
+
 function produtosPoluicao(id_produto) {
+    legendaEstagios();
+    produtosAnimation(id_produto);
     if (id_produto == "regador") {
         if (nivelPoluicao > 0) {
-            document.getElementById("regador").style.transformOrigin = "0 0";
             if (nivelPoluicao - 5 < 0){
                 nivelPoluicao = 0;
             } else{nivelPoluicao -= 5}
@@ -50,6 +62,7 @@ function calcularPoluicao() {
 }
 
 function puroSuco(){
+    legendaEstagios();
     document.getElementById("poluicaoPorcentagem").innerHTML = "MAROMBAAAAAAAA";
     document.getElementById("produtos").style.display = "none";
     document.getElementById("aviso").style.display = "none";
@@ -99,5 +112,18 @@ function mudarEstagio() {
         document.getElementById("plantas").style.width = "5em"
         document.getElementById("plantas").style.height = "5em" 
         document.getElementById("estagioN").innerHTML = 1;
+    }
+}
+
+function legendaEstagios(){
+    if (usaSuco == 1){
+        document.getElementById("legenda").innerHTML = "";
+    } else{
+        document.getElementById("est1").innerHTML = 0;
+        document.getElementById("est2").innerHTML = Math.round(2 + (2 * atrasoTotal));
+        document.getElementById("est3").innerHTML = Math.round(4 + (4 * atrasoTotal));
+        document.getElementById("est4").innerHTML = Math.round(7 + (7 * atrasoTotal));
+        document.getElementById("est5").innerHTML = Math.round(11 + (11 * atrasoTotal));
+        document.getElementById("est6").innerHTML = Math.round(13 + (13 * atrasoTotal));
     }
 }
