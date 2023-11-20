@@ -8,9 +8,9 @@
         <ul class="nav-list">
             <img src="Imagens/Projeto/user (1).png" alt=""width="30px">
             <li><a href="cadastro.php">Cadastre-se</a></li>
-            <li><a href="bio.php">Biologia</a></li>
-            <li><a href="quim.php">Química</a></li>
-            <li><a href="fis.php">Física</a></li>
+            <li><a href="./Plant Anatomy/index.html">Biologia</a></li>
+            <li><a href="jogolab/index.html">Química</a></li>
+            <li><a href="Striking Physics/index.html">Física</a></li>
         </ul>
         <div class="search-bar">
             <button class="search-button">Buscar</button>
