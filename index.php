@@ -11,7 +11,7 @@ include_once 'header.php';
             <a href="Striking Physics/index.html" class="character-link">
                 <img src="Imagens/Projeto/BolicheLogo.jpg" alt="LogoBoliche">
                 <h3>Striking Physics</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio distinctio quia nemo! Blanditiis, sequi itaque tempore beatae molestiae sed iste veritatis nobis! Voluptas a hic facere minus possimus soluta numquam?</p>
+                <p>Utilizando conceitos como gravidade, elasticidade e cinemática, criamos um ambiente virtual desafiador. Os usuários não apenas absorvem teorias, mas aplicam ativamente esses princípios em lançamentos e strikes, solidificando sua compreensão de maneira prática e envolvente.</p>
             </a>
         </div>
         <div class="character-card">
@@ -24,8 +24,8 @@ include_once 'header.php';
         <div class="character-card">
             <a href="./Plant Anatomy/index.html" class="character-link">
                 <img src="Imagens/Projeto/PlantaLogo.jpg" alt="LogoPlanta">
-                <h3>Plant Life</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio distinctio quia nemo! Blanditiis, sequi itaque tempore beatae molestiae sed iste veritatis nobis! Voluptas a hic facere minus possimus soluta numquam?</p>
+                <h3>Pumpkin Bloom</h3>
+                <p>Embarque em uma jornada educativa que analisa de perto os impactos ambientais sobre as plantas. Ao cuidar do crescimento de uma abóbora virtual, os participantes aprendem sobre ecossistemas, poluição, mudanças climáticas e práticas sustentáveis.</p>
             </a>
         </div>
     </main>
