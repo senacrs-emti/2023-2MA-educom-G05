@@ -97,6 +97,7 @@ img{
     cursor: pointer;
 }
 #protein img{
+    transform: rotateY(180deg);
     width: 4em;
     height: 6em;
     cursor: pointer;
@@ -155,4 +156,8 @@ img{
 @keyframes regagemOleo {
     0% {position: relative; transform: rotate(0deg); left: 21em; bottom: 18em;}
     100% {position: relative; transform: rotate(70deg); left: 21em; bottom: 18em;}
+}
+@keyframes regagemSuco{
+    0% {position: relative; transform: rotate(0deg); left: 36em; top: 12em;}
+    100% {position: relative; transform: rotate(70deg); left: 36em; top: 12em;}
 }

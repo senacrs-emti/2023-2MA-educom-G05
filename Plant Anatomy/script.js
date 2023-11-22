@@ -81,10 +81,9 @@ function calcularPoluicao() {
 }
 
 function puroSuco(){
-    legendaEstagios();
     document.getElementById("poluicaoPorcentagem").innerHTML = "MAROMBAAAAAAAA";
     document.getElementById("produtos").style.display = "none";
-    document.getElementById("aviso").style.display = "none";
+    document.getElementById("protein").style.animation = "2s regagemSuco";
     nivelPoluicao = 0;
     usaSuco = 1;
     contadorDia = 0;
