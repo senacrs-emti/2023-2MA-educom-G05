@@ -16,35 +16,37 @@
     <section>
         <h1>ESTÁGIO <span id="estagioN">1</span></h1>
         <div id="botaoDia">
-            <button onclick="voltarDia()"><</button>
+            <button name="voltarTodos" onclick="voltarDia(this.name)"><<</button>
+            <button onclick="voltarDia(this.name)"><</button>
             <h3>  DIA <span id="dia">0</span>  </h3>
-            <button onclick="passarDia()">></button>
+            <button onclick="passarDia(this.name)">></button>
+            <button name="passarTodos" onclick="passarDia(this.name)">>></button>
         </div>
         <div id="estagios">
             <img id="plantas" src="./img/Pumpkin_Stage_1.png" alt="Pumpkin_Stage_1">
+            <a href="aviso.html" id="aviso" ><img src="./img/olhoIcon.png" alt=""></a>
         </div>
     </section>
     <h2>NÍVEL DE POLUIÇÃO: <span id="poluicaoPorcentagem">0</span>%</h2>
-    <a href="aviso.html" id="aviso"><img src="./img/olhoIcon.png" alt=""></a>
     <section id="produtos">
         <h2>PRODUTOS</h2>
         <div>
             <button id="regador" onclick="produtosPoluicao(this.id)">
                 <img src="./img/regador.png" alt="Regador">
             </button>
-            <p>ÁGUA</p>
+            <p>ÁGUA (-5)</p>
         </div>
         <div>
             <button id="detergente" onclick="produtosPoluicao(this.id)">
                 <img src="./img/detergente.png" alt="Detergente">
             </button>
-            <p>DETERGENTE</p>
+            <p>DETERGENTE (+2)</p>
         </div>
         <div>
             <button id="oleo" onclick="produtosPoluicao(this.id)">
                 <img src="./img/oleo.png" alt="óleo">
             </button>
-            <p>ÓLEO</p>
+            <p>ÓLEO (+5)</p>
         </div>
     </section>
     <section id="legenda">

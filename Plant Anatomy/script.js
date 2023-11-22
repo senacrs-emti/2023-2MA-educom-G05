@@ -3,19 +3,38 @@ let nivelPoluicao = 0;
 let atrasoTotal = 0;
 let usaSuco = 0;
 
-function passarDia() {
-    if (contadorDia < 32) {
-        contadorDia++;
-        document.getElementById("dia").innerHTML = contadorDia;
-        mudarEstagio();   
-    }
+function displayAviso() {
+    if (nivelPoluicao == 41 && contadorDia == 32) {
+        document.getElementById("aviso").style.display = "block";
+    }  
 }
-function voltarDia() {
-    if (contadorDia > 0) {
-        contadorDia--;
-        document.getElementById("dia").innerHTML = contadorDia;
-        mudarEstagio();
+function passarDia(name_button) {
+    if (contadorDia < 32) {
+        if (name_button == "passarTodos"){
+            contadorDia = document.getElementById("est6").innerHTML;
+            document.getElementById("dia").innerHTML = contadorDia;
+            mudarEstagio();
+        } else{
+            contadorDia++;
+            document.getElementById("dia").innerHTML = contadorDia;
+            mudarEstagio();
+        }   
     }
+    displayAviso();
+}
+function voltarDia(name_button) {
+    if (contadorDia > 0) {
+        if (name_button == "voltarTodos") {
+            contadorDia = 0;
+            document.getElementById("dia").innerHTML = contadorDia;
+            mudarEstagio();
+        } else {
+            contadorDia--;
+            document.getElementById("dia").innerHTML = contadorDia;
+            mudarEstagio();   
+        }
+    }
+    displayAviso();
 }
 
 function produtosAnimation(id_produto) {
