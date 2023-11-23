@@ -87,6 +87,7 @@ function puroSuco(){
     nivelPoluicao = 0;
     usaSuco = 1;
     contadorDia = 0;
+    legendaEstagios();
 }
 
 function mudarEstagio() {
@@ -135,7 +136,7 @@ function mudarEstagio() {
 
 function legendaEstagios(){
     if (usaSuco == 1){
-        document.getElementById("legenda").innerHTML = "";
+        $('#legenda').append('<p id="est7">Estágio 7: dia 20</p>');
     } else{
         document.getElementById("est1").innerHTML = 0;
         document.getElementById("est2").innerHTML = Math.round(2 + (2 * atrasoTotal));

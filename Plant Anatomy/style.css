@@ -5,6 +5,7 @@ body{
     color: white;
 }
 
+/*Texto do site*/
 h1{
     text-align: center;
     margin: 1.5em 0em 0em 0em;
@@ -18,6 +19,7 @@ p{
     margin: 0;
 }
 
+/*Botões do site*/
 #botaoDia{
     text-align: center;
     margin: auto;
@@ -29,7 +31,6 @@ p{
     text-decoration: overline;
     font-size: 1.3em;
 }
-
 #botaoDia button{
     height: 3em;
     width: 3em;
@@ -41,6 +42,12 @@ p{
     cursor: pointer;
 }
 
+#produtos button{
+    background: none;
+    border: none;
+}
+
+/*Section estágios*/
 #estagios{
     background: linear-gradient(90deg, rgba(136,117,64,0.7) 0%, rgba(186,127,17,0.7) 35%, rgba(133,88,5,0.7) 100%);
     height: 25em;
@@ -53,33 +60,32 @@ p{
     box-shadow: 0px 0px 2em green;
 }
 
+/*Section legenda*/
 #legenda{
     position: relative;
     float: right;
-    margin: -18em 5em 0em 0em;
+    margin: -17em 8em 0em 0em;
     font-size: x-large;
+    background-color: rgb(170, 112, 35);
+    border: 0.3em solid rgb(75, 44, 19);
+    border-radius: 1em;
+    padding: 0em 1em 1em 1em;
 }
 
+/*Section Produtos*/
 #produtos{
     position: relative;
     float: left;
     margin: -30em -25em 0em 15em;
     background-color: gray;
     border: 1px black solid;
-}
-#produtos button{
-    background: none;
-    border: none;
+    text-align: center;
 }
 #produtos div{
     padding: 0.5em 1.5em 0.5em 1.5em;
 }
 
-img{
-    height: 5em;
-    width: 5em;
-}
-
+/*Todos os produtos presentes no site*/
 #regador img{
     transform: rotateY(180deg);
     width: 6em;
@@ -102,11 +108,13 @@ img{
     height: 6em;
     cursor: pointer;
 }
-
 #protein {
     background: none;
     border: none;
 }
+
+/*Extras*/
+img{width: 5em; height: 5em;}
 
 #inner {
     display: block;
@@ -120,6 +128,7 @@ img{
     display: none;
 }
 
+/*Tamanho da tela para esconder o Suco*/
 @media only screen and (min-width: 80em){
     #inner {
         display: none;
@@ -130,21 +139,39 @@ img{
         display: none;
     }
 }
+
+/*Alterações para telas de celular*/
 @media (max-width: 600px) {
     #produtos {
-        margin: 0px;
-        width: 100%;
-        margin-bottom: 1em;
+        margin: 0em 0em 1em 0em;
+        width: 35%;
+        font-size: small;
     }
-    #produtos div{
-        float: left;
-        margin: 0em 0.6em 0em 0.6em;
+    #produtos p {
+        font-size: small;
     }
-    #aviso {
-        margin: 3em 11.5em 0em 11.5em;
+    #regador img{
+        width: 4em;
+        height: 4em;
+    }
+    #detergente img{
+        width: 3em;
+        height: 4em;
+    }
+    #oleo img{
+        width: 3em;
+        height: 4em;
+    }
+
+    #legenda {
+        margin: 3em 0em 0em 0em;
+        width: 50%;
+        border-width: 0.2em;
+        font-size: larger;
     }
 }
 
+/*Animações dos Produtos*/
 @keyframes regagemAgua {
     0% {position: relative; transform: rotate(0deg); left: 20em}
     100% {position: relative; transform: rotate(25deg); left: 20em}
