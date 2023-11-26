@@ -9,11 +9,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     // Inserir os dados no banco de dados
     $query = "INSERT INTO cad_usuario2 (nome, email, senha) VALUES ('$nome', '$email', '$senha')";
-    if (mysqli_query($con, $query)) {
+
+    $result = mysqli_query($con, $query);
+
+    if ($result) {
         echo "Cadastro realizado com sucesso!";
     } else {
         echo "Erro ao cadastrar: " . mysqli_error($con);
     }
+    
 
     mysqli_close($con);
 }
